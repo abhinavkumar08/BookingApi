@@ -56,7 +56,7 @@ public class ReservationService {
 
 	private static Logger logger = LoggerFactory.getLogger(ReservationService.class);
 
-	public ReservationResponse createReservation(ReservationPayload reservationPayload) throws BookingApiException {
+	public synchronized ReservationResponse createReservation(ReservationPayload reservationPayload) throws BookingApiException {
 
 		int hotelId = reservationPayload.getHotelId();
 		List<HotelRoom> rooms = reservationPayload.getRooms();

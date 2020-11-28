@@ -27,7 +27,6 @@ public class ReservationPayload {
 
 	public ReservationPayload(int hotelId, Date checkin, Date checkout, int userId, List<HotelRoom> rooms,
 			PaymentMode paymentMode) {
-		super();
 		this.hotelId = hotelId;
 		this.checkin = checkin;
 		this.checkout = checkout;

@@ -10,7 +10,6 @@ import java.util.Optional;
 import org.joda.time.DateTime;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import io.bookingapi.dataload.entity.Hotel;
@@ -28,16 +27,17 @@ import io.bookingapi.reservation.exceptions.BookingApiException;
 import io.bookingapi.reservation.repository.PaymentRepository;
 import io.bookingapi.reservation.repository.ReservationRepository;
 import io.bookingapi.reservation.repository.RoomReservationRepository;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 public class ReservationServiceTest {
 
 	ReservationService reservationService = new ReservationService();
 
-	@Mock
+	@MockBean
 	ReservationRepository mockReservationRepository;
-	@Mock
+	@MockBean
 	PaymentRepository mockPaymentRepository;
-	@Mock
+	@MockBean
 	RoomReservationRepository mockRoomReservationRepository;
 	
 	private static final int DUMMY_RESERVATION_ID = 1;

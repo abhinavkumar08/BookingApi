@@ -34,7 +34,7 @@ final public class ReservationValidator {
 	private static void validateCheckinAndCheckoutDates(Date checkinDate, Date checkoutDate) throws RequestValidationException {
 		
 		long currTime = new Date().getTime();
-		if(checkinDate.getTime()<currTime) throw new RequestValidationException("Check In date cannot be of the past.");
+		if(checkinDate.getDate()<new Date().getDate()) throw new RequestValidationException("Check In date cannot be of the past.");
 		
 		int diffDays = Days.daysBetween(new LocalDate(checkinDate), new LocalDate(checkoutDate)).getDays();
 		if(diffDays<=0 || diffDays>=30) throw new RequestValidationException("Difference between check in and checkout date can range from 1 to 30.");

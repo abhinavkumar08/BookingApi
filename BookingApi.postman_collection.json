@@ -1,0 +1,875 @@
+{
+	"info": {
+		"_postman_id": "1f2825d8-6365-4fe9-94a8-59ab0dcb2f75",
+		"name": "BookingApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"1\",\r\n\"userId\" : \"1\",\r\n\"rooms\" : [{\r\n        \"id\": 1,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"1\",\r\n\"userId\" : \"1\",\r\n\"rooms\" : [{\r\n        \"id\": 1,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/1/register/room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"roomType\" : \"Deluxe\",\r\n\"pricePerNight\" : 300,\r\n\"smokingRoom\" : true,\r\n\"maxOccupancy\" : 2\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/1/register/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"1",
+						"register",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\" : \"Abhinav\",\r\n\"lastName\" : \"Kumar\",\r\n\"email\" : \"abhinavkumar08@gmail.com\",\r\n\"phoneNumber\" : 9742969818\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"hotelName\" : \"Marriot International\",\r\n\"street\" : \"Sukhumvit 15\",\r\n\"city\" : \"Bangkok\",\r\n\"state\" : \"Bangkok Urban\",\r\n\"country\" : \"Thailand\",\r\n\"pincode\" : 10110\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"1\",\r\n\"userId\" : \"1\",\r\n\"rooms\" : [{\r\n        \"id\": 1,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"1\",\r\n\"userId\" : \"1\",\r\n\"rooms\" : [{\r\n        \"id\": 1,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/1/register/room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"roomType\" : \"Deluxe\",\r\n\"pricePerNight\" : 300,\r\n\"smokingRoom\" : true,\r\n\"maxOccupancy\" : 2\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/1/register/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"1",
+						"register",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/2/register/room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"roomType\" : \"Deluxe\",\r\n\"pricePerNight\" : 300,\r\n\"smokingRoom\" : true,\r\n\"maxOccupancy\" : 2\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/2/register/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"2",
+						"register",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\" : \"Abhinav\",\r\n\"lastName\" : \"Kumar\",\r\n\"email\" : \"abhinavkumar08@gmail.com\",\r\n\"phoneNumber\" : 9742969818\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"hotelName\" : \"Marriot International\",\r\n\"street\" : \"Sukhumvit 15\",\r\n\"city\" : \"Bangkok\",\r\n\"state\" : \"Bangkok Urban\",\r\n\"country\" : \"Thailand\",\r\n\"pincode\" : 10110\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"1\",\r\n\"userId\" : \"1\",\r\n\"rooms\" : [{\r\n        \"id\": 2,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"1\",\r\n\"userId\" : \"\",\r\n\"rooms\" : [{\r\n        \"id\": 2,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"2\",\r\n\"userId\" : \"\",\r\n\"rooms\" : [{\r\n        \"id\": 1,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/1/register/room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"roomType\" : \"Deluxe\",\r\n\"pricePerNight\" : 300,\r\n\"smokingRoom\" : true,\r\n\"maxOccupancy\" : 2\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/1/register/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"1",
+						"register",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\" : \"Abhinav\",\r\n\"lastName\" : \"Kumar\",\r\n\"email\" : \"abhinavkumar08@gmail.com\",\r\n\"phoneNumber\" : 9742969818\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"hotelName\" : \"Marriot International\",\r\n\"street\" : \"Sukhumvit 15\",\r\n\"city\" : \"Bangkok\",\r\n\"state\" : \"Bangkok Urban\",\r\n\"country\" : \"Thailand\",\r\n\"pincode\" : 10110\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"1\",\r\n\"userId\" : \"1\",\r\n\"rooms\" : [ {\r\n        \"id\": 1,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    },\r\n    {\r\n        \"id\": 3,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }\r\n   ]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/1/register/room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"roomType\" : \"Deluxe\",\r\n\"pricePerNight\" : 300,\r\n\"smokingRoom\" : true,\r\n\"maxOccupancy\" : 2\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/1/register/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"1",
+						"register",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\" : \"Abhinav\",\r\n\"lastName\" : \"Kumar\",\r\n\"email\" : \"abhinavkumar08@gmail.com\",\r\n\"phoneNumber\" : 9742969818\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"hotelName\" : \"Marriot International\",\r\n\"street\" : \"Sukhumvit 15\",\r\n\"city\" : \"Bangkok\",\r\n\"state\" : \"Bangkok Urban\",\r\n\"country\" : \"Thailand\",\r\n\"pincode\" : 10110\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/user/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkIn\" : \"2012-05-10\",\r\n\"checkout\" : \"2012-05-12\",\r\n\"paymentMode\" : \"CASH\",\r\n\"rooms\" : [{\r\n        \"roomId\": \"1001\",\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"maxOccupancy\": 2,\r\n        \"hotelId\": {\r\n            \"hotelId\": \"1\",\r\n            \"hotelName\": \"Marriot International\",\r\n            \"street\": \"Sukhumvit 15\",\r\n            \"city\": \"Bangkok\",\r\n            \"state\": \"Bangkok\",\r\n            \"country\": \"Thailand\",\r\n            \"pincode\": 10110\r\n        },\r\n        \"smookingRoom\": false\r\n    }]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reservation/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"checkin\" : \"2020-07-10\",\r\n\"checkout\" : \"2020-07-14\",\r\n\"paymentMode\" : \"CASH\",\r\n\"hotelId\" : \"1\",\r\n\"userId\" : \"1\",\r\n\"rooms\" : [ {\r\n        \"id\": 1,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    },\r\n    {\r\n        \"id\": 3,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"roomType\": \"Deluxe\",\r\n        \"pricePerNight\": 400,\r\n        \"smokingRoom\": true,\r\n        \"occupancy\": 2\r\n       \r\n    }\r\n   ]\r\n\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/reservation/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/1/rooms",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"hotelId\" : \"1\",\r\n\"hotelName\" : \"Marriot International\",\r\n\"street\" : \"Sukhumvit 15\",\r\n\"city\" : \"Bangkok\",\r\n\"state\" : \"Bangkok\",\r\n\"country\" : \"Thailand\",\r\n\"pincode\" : 10110\r\n\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/1/rooms",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"1",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/1/register/room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"roomType\" : \"Deluxe\",\r\n\"pricePerNight\" : 300,\r\n\"smokingRoom\" : true,\r\n\"maxOccupancy\" : 2\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/1/register/room",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"1",
+						"register",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"id\" : \"abhi\",\r\n\"lastName\" : \"Kumar\",\r\n\"firstName\" : \"Abhianv\",\r\n\"email\" : \"abhinavkumar08@gmail.com\",\r\n\"phoneNumber\" : 9742969818\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"hotelId\" : \"1\",\r\n\"hotelName\" : \"Marriot International\",\r\n\"street\" : \"Sukhumvit 15\",\r\n\"city\" : \"Bangkok\",\r\n\"state\" : \"Bangkok\",\r\n\"country\" : \"Thailand\",\r\n\"pincode\" : 10110\r\n\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\" : \"Abhinav\",\r\n\"lastName\" : \"Kumar\",\r\n\"email\" : \"abhinavkumar08@gmail.com\",\r\n\"phoneNumber\" : 9742969818\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/hotels/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"hotelName\" : \"Marriot International\",\r\n\"street\" : \"Sukhumvit 15\",\r\n\"city\" : \"Bangkok\",\r\n\"state\" : \"Bangkok Urban\",\r\n\"country\" : \"Thailand\",\r\n\"pincode\" : 10110\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/hotels/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotels",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

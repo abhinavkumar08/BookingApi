@@ -1,0 +1,62 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: booking
+  name: booking-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: booking
+  template:
+    metadata:
+      labels:
+        app: booking
+    spec:
+      containers:
+      - image: abhinavkumar08/booking-api:1.1
+        name: booking-api
+        ports: 
+          - containerPort: 8081
+        env: 
+          - name: DB_PASS
+            valueFrom:
+             secretKeyRef:
+              name: mysql-secret
+              key: mysql-root-password
+          - name: DB_PORT
+            valueFrom:
+             configMapKeyRef:
+              name: mysql-configmap
+              key: mysql-port
+          - name: DB_HOSTNAME
+            valueFrom:
+             configMapKeyRef:
+              name: mysql-configmap
+              key: database-url
+          - name: DB_USER
+            valueFrom:
+             configMapKeyRef:
+              name: mysql-configmap
+              key: mysql-root-user
+
+---
+
+apiVersion: v1
+kind: Service
+metadata: 
+ name: booking-service
+spec: 
+ type: LoadBalancer
+ selector:
+  app: booking
+ ports: 
+  - protocol: TCP
+    port: 8081
+    targetPort: 8081
+    nodePort: 30000
